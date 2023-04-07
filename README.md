@@ -8,7 +8,7 @@ server.
 
 # Screenshot
 
-![Home](https://aniketraj00.github.io/udacity_frontend_nanodegree_weather_journal_app/public/screenshots/screenshot-1.jpg)
+![Home](https://raw.githubusercontent.com/aniketraj00/udacity_frontend_nanodegree_weather_journal_app/69825484ca6219b0cefab1ca490d4709f613856a/public/screenshots/screenshot-1.jpg)
 
 # Table of Contents
 
