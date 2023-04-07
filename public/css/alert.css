@@ -1,0 +1,76 @@
+.alert {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+}
+
+.alert-modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -100%;
+    background-color: #fff;
+    color: #000;
+    height: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.25em;
+    padding: 1em;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.alert-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75em;
+}
+
+.alert-modal-header > h1 {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.alert-modal-content > h1 {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 0.35em;
+}
+
+.alert-modal-content > p {
+    font-size: 0.85em;
+    line-height: 1.4em;
+}
+
+.alert-modal-toggler,
+.alert-modal-toggler img {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.alert-modal-toggler {
+    cursor: pointer;
+}
+
+.alert.alert--show {
+    display: flex;
+}
+
+.alert.alert--show .alert-modal {
+    animation: alert-translate-y 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes alert-translate-y {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 10em;
+    }
+}

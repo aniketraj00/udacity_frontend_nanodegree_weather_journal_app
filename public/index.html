@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather Journal App</title>
+</head>
+<body>
+    <div class="alert">
+        <div class="row flex-center-x">
+            <div class="col-md-8">
+                <div class="alert-modal">
+                    <div class="alert-modal-header">
+                        <h1>Error</h1>
+                        <div class="alert-modal-toggler">
+                            <attr title="Close icons created by Fathema Khanom - Flaticon">
+                                <img src="img/close.png" alt="close-icon">
+                            </attr>
+                        </div>
+                    </div>
+                    <div class="alert-modal-content">
+                        <h1>Something went wrong!</h1>
+                        <p>Please check the console and see if everything is working correctly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="progress d-none">
+        <div class="progress-spinner"></div>
+        <div class="progress-title">Loading...</div>
+    </div>
+    <section id="main" class="mb-5">
+        <div class="container">
+            <h1 class="display-1 text-center header-main">Weather Journal App</h1>
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-xl-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <form>
+                                <div class="input-block">
+                                    <label for="country">Select Country</label>
+                                    <select name="countryCode" id="country" class="input-control">
+                                        <option value="empty">Select Country</option>
+                                    </select>
+                                </div>
+                                <div class="input-block">
+                                    <label for="zip">Enter Zip Code</label>
+                                    <input name="zipCode" id="zip" type="number" placeholder="123456" class="input-control" required>
+                                </div>
+                                <div class="input-block">
+                                    <label for="feelings">How are you feeling today?</label>
+                                    <textarea name="userFeeling" id="feelings" type="text" placeholder="Enter here" class="input-control" required></textarea>
+                                </div>
+                                <button type="submit" id="generate" class="btn">Generate</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 col-xl-8">
+                    <div class="entries"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img class="footer-p-logo" src="img/open-weather-logo.png" alt="open-weather-logo">
+                <h1 class="footer-p-header">Powered By OpenWeather</h1>
+                <p class="footer-p-d-text">Developed by <a href="https://www.github.com/aniketraj00">Aniket Raj</a></p>
+                <div class="footer-social">
+                    <attr title="Instagram logo icons created by Laisa Islam Ani - Flaticon">
+                        <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+                    </attr>
+                    <attr title="Twitter logo icons created by Md Tanvirul Haque - Flaticon">
+                        <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                    </attr>
+                    <attr title="Facebook icons created by Freepik - Flaticon">
+                        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                    </attr>
+                    <attr title="Youtube icons created by Md Tanvirul Haque - Flaticon">
+                        <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+                    </attr>  
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

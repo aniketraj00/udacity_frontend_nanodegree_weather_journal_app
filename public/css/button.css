@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    outline: none;
+    text-decoration: none;
+    padding: 0.8em 1.6em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    background: linear-gradient(#8E2DE2, #4A00E0);
+    color: #fff;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}

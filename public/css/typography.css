@@ -1,0 +1,21 @@
+.display-1 {
+    font-size: 3.75em;
+    font-weight: 500;
+}
+
+.display-3 {
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+.text-small {
+    font-size: 0.85em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: #fff;
+}
